@@ -4,5 +4,9 @@
   "port": 5432,
   "username": "postgres",
   "password": "dockergs",
-  "database": "gobarber_rgs"
+  "database": "gobarber_rgs",
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
