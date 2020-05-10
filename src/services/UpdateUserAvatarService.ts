@@ -20,7 +20,6 @@ class UpdateUserAvatarService {
       throw new Error('Only authenticated users can change avatar');
     }
 
-    // Remove avatar caso exista
     if (user.avatar) {
       const userAvatarFilePath = path.join(uploadConfig.directory, user.avatar);
       const userAvatarFileExists = await fs.promises.stat(userAvatarFilePath);
@@ -30,10 +29,6 @@ class UpdateUserAvatarService {
       }
     }
 
-    /**
-     * 'Seta' campo avatar do usuário autenticado (user = user_id) com o avatar
-     * enviado na requisição (avatarFilename) e salva no seu registro.
-     */
     user.avatar = avatarFilename;
 
     await usersRepository.save(user);
