@@ -29,6 +29,8 @@ export default function ensureAuthenticated(
 
     const { sub } = decoded as TokenPayLoad;
 
+    request.user = { id: sub };
+
     return next();
   } catch {
     throw new Error('Invalid Token');
