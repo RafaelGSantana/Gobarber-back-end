@@ -29,6 +29,7 @@
       }
     ],
     "@typescript-eslint/camelcase": "off",
+    "no-useless-constructor": "off",
     "@typescript-eslint/interface-name-prefix": [
       "error",
       { "prefixWithI": "always" }
