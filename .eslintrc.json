@@ -29,6 +29,10 @@
       }
     ],
     "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/interface-name-prefix": [
+      "error",
+      { "prefixWithI": "always" }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
