@@ -1,4 +1,6 @@
-# Recuperação de senha
+# Mapa das features do sistema
+
+## Recuperação de senha
 
 **RF - Requisitos funcionais**
 
@@ -17,7 +19,7 @@
 - O link de alteração de senha, enviado ao e-mail do usuário, deve expirar em 2 horas;
 - O usuário deve confirmar a senha alterada, inserindo-a 2 vezes no formulário;
 
-# Atualização do perfil do usuário
+## Atualização do perfil do usuário
 
 **RF**
 
@@ -29,7 +31,7 @@
 - Para atualizar sua senha, o usuário deve informar a senha antiga;
 - Para atualizar sua senha, o usuário precisa confirmar a nova senha;
 
-# Painel do prestador
+## Painel do prestador
 
 **RF**
 
@@ -47,7 +49,7 @@
 
 - A notificação deve poder ser alterada entre lida e não lida, pelo prestador;
 
-# Agendamento de serviços
+## Agendamento de serviços
 
 **RF**
 
