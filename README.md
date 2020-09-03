@@ -21,7 +21,8 @@ O back-end da aplicação, foi desenvolvido com:
 - Handlebars
 - JWT
 - TypeORM 
-- Insomnia para testes
+- Jest
+- Insomnia para testar requisições
 
 ## Para baixar o back-end do **Gobarber**:
 
