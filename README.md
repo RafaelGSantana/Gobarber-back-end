@@ -1,71 +1,47 @@
-# Mapa das features do sistema
+# GoBarber
+##### back-end
 
-## Recuperação de senha
+## Sobre
 
-**RF - Requisitos funcionais**
+O **GoBarber** é uma aplicação desenvolvida com a finalidade de digitalizar o sistema de agendamentos em salões de beleza e barbearias.
+Essa aplicação foi desenvolvida na durante o curso GoStack da Rocketseat, com o objetivo de praticar conceitos e a utilização de tecnologias como Node.js, ReactJS e React Native para desenvolvimento de aplicações full stack!
 
-- O usuário deve poder recuperar sua senha informando seu e-mail;
-- O usuário deve receber um e-mail com instruções para recuperação de senha;
-- O usuário deve poder alterar sua senha;
+## Tecnologias utilizadas
 
-**RNF - Requisitos não funcionais**
+O back-end da aplicação, foi desenvolvido com:
 
-- Utilizar o Mailtrap para testar envio de e-mail, em ambiente de desenvolvimento;
-- Utilizar Amazon SES para envio de e-mail em ambiente de produção;
-- O envio de e-mails deve acontecer em segundo plano;
+- Typescript
+- Node.js
+- Express.js
+- Docker - para a utilização de imagens de banco de dados como:
+  - PostgreSQL
+  - MongoDB
+  - Redis
+- Nodemailer
+- Handlebars
+- JWT
+- TypeORM 
+- Insomnia para testes
 
-**RN - Regras de negócio**
+## Para baixar o back-end do **Gobarber**:
 
-- O link de alteração de senha, enviado ao e-mail do usuário, deve expirar em 2 horas;
-- O usuário deve confirmar a senha alterada, inserindo-a 2 vezes no formulário;
+- Para rodar o projeto na sua máquina, certifique-se de ter instalado na sua máquina o [Node.js](nodejs.org), o [Yarn](https://yarnpkg.com/getting-started/install) e o [Docker](https://www.docker.com/get-started). Caso sinta dificuldade com o Docker, recomendo a [leitura deste post](https://blog.rocketseat.com.br/introducao-ao-docker-criando-um-servidor-web-com-node-js-e-subindo-para-o-container/).
 
-## Atualização do perfil do usuário
+```bash
+# Rode os seguintes comandos no seu terminal:
 
-**RF**
+# para clonar o projeto
+$ git clone https://github.com/RafaelGSantana/Gobarber-back-end.git
 
-- O usuário deve poder atualizar seu nome, e-mail e senha;
+# entrar na pasta do projeto
+$ cd Gobarber-back-end
 
-**RN**
+# instalar todas as dependências
+$ yarn
 
-- O usuário não pode alterar seu e-mail para um e-mail existente no banco de dados;
-- Para atualizar sua senha, o usuário deve informar a senha antiga;
-- Para atualizar sua senha, o usuário precisa confirmar a nova senha;
+# executar o projeto
+$ yarn dev:server
 
-## Painel do prestador
+```
 
-**RF**
-
-- O usuário deve poder listar seus agendamentos de um dia específico;
-- O prestador deve receber uma notificação sempre que houver um novo agendamento;
-- O prestador deve poder visualizar as notificações não lidas;
-
-**RNF**
-
-- Os agendamentos do prestador, no dia ,devem ser armazenados em cache;
-- As notificações do prestador devem ser armazanedas no MongoDB;
-- As notificações do prestador devem ser enviadas em tempo real, utilizando Socket.io;
-
-**RN**
-
-- A notificação deve poder ser alterada entre lida e não lida, pelo prestador;
-
-## Agendamento de serviços
-
-**RF**
-
-- O usuário deve poder listar todos os prestadores de serviço cadastrados;
-- O usuário deve poder listar os dias de um mês específico, com pelo menos um horário disponível, de um prestador específico;
-- O usuário deve poder listar os horários disponíveis de um dia específico, de um prestador específico;
-- O usuário deve poder realizar um novo agendamento com um prestador específico;
-
-**RNF**
-
-- A listagem de prestadores deve ser armazenada em cache;
-
-**RN**
-
-- Cada agendamento deve durar 1 hora exatamente;
-- Os agendamentos deve estar disponíveis entre 8h e 18h (O último horário disponível será o das 17h);
-- O usuário não deve poder agendar um horário ocupado;
-- O usuário não deve poder agendar um horário que já passou;
-- O usuário não deve poder agendar um serviço consigo mesmo;
+#### Sinta-se à vontade para utilizar este projeto à sua necessidade e, claro, sugerir quaisquer alterações!
