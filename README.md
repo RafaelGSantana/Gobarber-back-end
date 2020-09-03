@@ -39,6 +39,9 @@ $ cd Gobarber-back-end
 # instalar todas as dependências
 $ yarn
 
+# rodar as migrations e criar as tabelas do banco
+$ yarn typeorm migration:run
+
 # executar o projeto
 $ yarn dev:server
 
