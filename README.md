@@ -44,5 +44,6 @@ $ yarn
 $ yarn dev:server
 
 ```
+Observação: Apenas com estes comandos, dará erro. Logo eu completarei o passo-a-passo necessário para baixar e rodar o projeto na sua máquina. Para mais detalhes, peço, por favor, que entrem em contato comigo.
 
 #### Sinta-se à vontade para utilizar este projeto à sua necessidade e, claro, sugerir quaisquer alterações!
